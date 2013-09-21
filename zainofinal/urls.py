@@ -6,5 +6,5 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^index/$', 'zaino.views.index', name='index'),
-    url(r'^admin/$', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls))
 )
